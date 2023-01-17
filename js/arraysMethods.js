@@ -2,8 +2,8 @@ let letters = ["a","b","c","d"];
 
 
 console.log(letters.toString());
+console.log(letters);               //these two are the same , objects have a built in toString()
 console.log(typeof(letters.toString()));
-console.log(letters);
 
 
 console.log(letters.join(" | ")); // it makes an array a string and adds an input between every element
@@ -37,12 +37,12 @@ console.log(letters);           // 2 is the where should it add the new elements
                                 // 0 is how many elements should be removed,
                                 // the rest are the elements that should be added
 
-letters.splice(1,1) // using splice() this way removes elements
+letters.splice(1,1) // using splice() this way removes elements without undefined gabs
 console.log(letters);
 
 
 let numbersSliced1 = numbers.slice(1)// slice() slices an array from the beginning to the given index and puts in a new array
-let numbersSliced2 = numbers.slice(1,3)// it will from the idex 1 to 3 but not including the 3
+let numbersSliced2 = numbers.slice(1,3)// it will slice the array from the idex 1 to 3 but not including the 3
 
 console.log(numbersSliced1); 
 console.log(numbersSliced2); 
