@@ -37,6 +37,25 @@ console.log(filtered);
 
 
 
-//for loop
+//for loop : when you want to run the same code n times 
+
+const abc = ["a","b","c","d","f"];
+
+for(i=0 ; i<abc.length ; i++){  //the for of is best practice for going through an arrays
+    console.log(abc[i]);    
+}
 
 
+
+const cars = ['ford', 'toyota', 'nissan', 'honda' ];
+let myCars = "My cars are : ";
+
+for(i=0 ; i<cars.length ; i++){  // loop around cars and give a diffrent out put on the last element 
+    if(i === cars.length - 1){
+        myCars += `and ${cars[i]}.`
+    } else {
+        myCars += `${cars[i]}, `
+    }
+}
+
+console.log(myCars);
