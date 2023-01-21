@@ -7,9 +7,35 @@
     <title>guest list</title>
 </head>
 <body>
+    <h2>Admitted</h2>
+    <div class="admitted"></div>
+    <h2>Refused</h2>
+    <div class="refused"></div>
 
 
-    
+
+<script>
+    const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+    const admitted = document.querySelector('.admitted');
+    const refused = document.querySelector('.refused');
+    admitted.textContent = 'Admit: ';
+    refused.textContent = 'Refuse: ';
+
+    for(guest of people){
+        if(guest === "Phil" || guest === "Lola"){
+            refused.textContent += `${guest}, `;
+        }else{
+            admitted.textContent += `${guest}, `;
+        }
+    }
+
+    // refused.textContent += ;
+    // admitted.textContent += ;
+
+</script>
+
+
     
 </body>
 </html>
