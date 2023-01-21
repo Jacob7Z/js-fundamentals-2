@@ -59,3 +59,10 @@ for(i=0 ; i<cars.length ; i++){  // loop around cars and give a diffrent out put
 }
 
 console.log(myCars);
+
+
+
+
+// break in loops
+
+
