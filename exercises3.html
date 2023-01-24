@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+<script>
+        //1
+    for(b=1; b<=10; b++){
+        if(b%2 != 0) continue;
+        alert(b);
+      }
+
+
+      //2
+
+
+    // for (let i = 0; i < 3; i++) {
+    //     alert( `number ${i}!` );
+    //   }
+
+    let r = 0;
+    while(r<3){
+        alert(`number ${r}!`);
+        r++;
+    }
+
+
+//3
+    while(true){
+        let pt = prompt("Enter a number ",'');
+        if(pt === null){
+            break;
+        }else if(pt<100){
+            continue;
+        }
+        alert(pt);
+    }
+
+//4
+
+
+let n = 10;
+
+prime: 
+for(let w = 2 ; w<=n ; w++ ){
+    
+    for(let j=2 ; j<w ; j++ ){
+        
+        if( w % j == 0) continue prime;
+    }
+
+    alert(w);
+}
+
+
+
+
+
+</script>
+    
+</body>
+</html>
